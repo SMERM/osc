@@ -26,8 +26,6 @@ START_TEST (check_osc_compute_zero_one)
 }
 END_TEST
 
-
-
 START_TEST (check_osc_compute_zero_zero_phadd)
 {
   Osc par = {0,1,1};
@@ -40,8 +38,6 @@ START_TEST (check_osc_compute_zero_zero_phadd)
 }
 END_TEST
 
-
-
 START_TEST (check_osc_compute_zero_one_phadd)
 {
   Osc par = {0,1,1};
@@ -53,8 +49,6 @@ START_TEST (check_osc_compute_zero_one_phadd)
   ck_assert_double_eq_tol(out.time,1.0, 1e-10);
 }
 END_TEST
-
-
 
 Suite * osc_compute_suite(void)
 {
